@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <style>
+    :root: {
+      fill: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+  :root {
+    fill: #00CC14;
+    }
+  }
+  </style>
+<path d="M16 16h4v4h-4Zm-4 0v-4h4v4Zm0 0v4H8v-4Zm12-8h-4v4h4Zm0 0"/>
+<path fill-rule="evenodd" d="M0 0v32h32V0Zm28 28h-8v-4h4v-4h4Zm-8-8h4v-4h4V4H4v16h4v4H4v4h12v-4h4Zm0 0"/>
+</svg>

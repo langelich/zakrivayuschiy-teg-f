@@ -21,7 +21,9 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+button,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -35,6 +37,10 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 ul,
