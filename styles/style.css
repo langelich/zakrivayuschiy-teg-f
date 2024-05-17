@@ -390,7 +390,7 @@
   justify-content: end;
   gap: 5px;
   padding: 0 22px 19px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .card__icon-button {
