@@ -16,7 +16,7 @@
 
 .page {
   color: var(--main-color, #000);
-  font-family: var(--main-font, 'Inter-Variable'), Arial, Helvetica, sans-serif;
+  font-family: var(--accent-font, 'PressStart2P-Regular'), Arial, Helvetica, sans-serif;
   background-color: var(--bg-color, #fff);
   background-image: var(
     --bg-image,
@@ -41,6 +41,12 @@
   min-block-size: 100dvb;
   font-variation-settings: var(--normal-font-weight, 465);
 }
+
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: var(--main-font, 'Inter-Variable'),  Arial, Helvetica, sans-serif;
+  }
+} 
 
 .header {
   padding: 100px 0;
@@ -340,6 +346,7 @@
   inline-size: 100%;
   object-fit: cover;
   border-block: 2px solid var(--main-color, #000);
+  max-block-size: clamp(375px, 264px + 30vi, 696px);
 }
 
 .img-blur {
@@ -441,6 +448,11 @@
   transition: fill 0.3s 0.05s linear;
 }
 
+.like-icon .contour {
+  fill: var(--main-color, #000);
+  transition: fill 0.1s linear;
+}
+
 .like-icon.is-liked .core {
   fill: var(--sparks-color, #f00);
   transition: fill 0.3s linear;
@@ -462,11 +474,6 @@
 
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s ease-in 1 alternate;
-}
-
-.like-icon .contour {
-  fill: var(--main-color, #000);
-  transition: fill 0.1s linear;
 }
 
 .card__like-button {
