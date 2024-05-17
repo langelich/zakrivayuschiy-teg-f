@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
   <style>
-    :root: {
-      fill: none;
+    :root {
+      fill: #000;
     }
-
     @media (prefers-color-scheme: dark) {
   :root {
-    fill: #00CC14;
+    fill: #00cc14;
     }
   }
   </style>
