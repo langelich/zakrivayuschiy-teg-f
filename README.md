@@ -1,1 +1,1 @@
-git@github.com:langelich/zakrivayuschiy-teg-f.git
+https://github.com/langelich/zakrivayuschiy-teg-f.git
