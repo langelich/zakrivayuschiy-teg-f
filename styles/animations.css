@@ -108,6 +108,7 @@
 .like-icon.is-liked .heart {
   animation-name: increase;
   animation-delay: 0.1s;
+  transform-origin: center center;
 }
 
 .like-icon.is-liked .sparks {
