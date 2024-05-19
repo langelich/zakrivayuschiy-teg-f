@@ -45,7 +45,6 @@
 }
 
 @supports (font-variation-settings: normal) {
-
   .page {
     font-family: var(--main-font, 'Inter-Variable'), Arial, Helvetica,
       sans-serif;
@@ -155,7 +154,6 @@
 }
 
 @supports (font-variation-settings: normal) {
-
   .card__title {
     font-variation-settings: 'wght' var(--bold-font-weight, 700);
   }
@@ -185,7 +183,6 @@
 }
 
 @supports (-webkit-text-stroke: 1px var(--bg-color, #fff)) {
-
   .label {
     -webkit-text-stroke: 1px var(--bg-color, #fff);
     text-shadow: none;
@@ -271,8 +268,6 @@
     Geneva, sans-serif;
   transition: box-shadow 0.3s ease;
 }
-
-
 
 /* FOOTER */
 
@@ -402,6 +397,7 @@
 
 .theme-menu__button:focus,
 .card__like-button:focus,
+.card__icon-button:focus,
 .footer__button:focus,
 .close-button:focus {
   outline: none;
