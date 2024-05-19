@@ -47,7 +47,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
   :root {
     --bold-font-weight: 785;
     --normal-font-weight: 465;
