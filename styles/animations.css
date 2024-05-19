@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-@keyframes arrow {
+@keyframes translationLeftRight {
 
   from {
     translate: 0;
@@ -24,18 +24,18 @@
   }
 }
 
-@keyframes heart {
+@keyframes increase {
 
   from {
     scale: 1;
   }
 
   to {
-    scale: 1, 5;
+    scale: 1.5;
   }
 }
 
-@keyframes sparks {
+@keyframes opacity {
 
   from {
     opacity: 0;
@@ -44,4 +44,88 @@
   to {
     opacity: 1;
   }
+}
+
+.smoothAnimation {
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+.smoothTransition {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition-delay: 0.03s;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+}
+
+.like-icon:hover .core {
+  fill: var(--main-color, #000);
+}
+
+.like-icon:hover .main-body {
+  fill: var(--main-color, #000);
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--sparks-color, #f00);
+}
+
+.like-icon:active .main-body {
+  fill: var(--sparks-color, #f00);
+  transition-delay: 0.05s;
+}
+
+.like-icon .contour {
+  fill: var(--main-color, #000);
+  transition-duration: 0.1s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--sparks-color, #f00);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--sparks-color, #f00);
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--sparks-color, #f00);
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation-name: increase;
+  animation-delay: 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  animation-name: opacity;
+  animation-delay: 0.3s;
+}
+
+.card__icon-button {
+  max-block-size: 38px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border: 2px solid var(--main-color, #000);
 }
